@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gestión de Gastos</title>
+
+</head>
+
+<body>
+
+<div id="space">
+
+    <div class="container">
+        <div class="row align-items-start">
+        <div class="col"> 
+                <h1>Gestión de Gastos</h1>
+                <form id="expense-form">
+                    <div class="form-group">
+                        <label id="a" for="expense">Gasto</label>
+                        <input type="text" id="expense" required>
+                    </div>
+                    <div class="form-group">
+                        <label id="a" for="description">Descripción</label>
+                        <input type="text" id="description" required>
+                    </div>
+                    <div class="form-group">
+                        <label id="a" for="category">Categoría</label>
+                        <input type="text" id="category" required>
+                    </div>
+                    <div class="form-group">
+                        <label id="a" for="amount">Monto</label>
+                        <input type="number" id="amount" required>
+                    </div>
+                    <div class="form-group">
+                        <label id="a" for="date">Fecha</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <button type="submit">Añadir Gasto</button>
+                </form>
+            </div>
+            <div class="col">
+                <div id="message"></div>
+                <div class="search" >
+                    <input type="text" id="search" placeholder="Buscar por gasto, descripción o categoría">
+            </div>
+                        
+            </div>
+        <div id="expenses-list"></div>
+    </div>  
+    </div>
+</div>  
+
+    <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particulas.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+
+<footer>
+   
+    <div id="expenses-list"></div>
+</footer>
+
+</html>
